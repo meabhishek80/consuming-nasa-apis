@@ -1,6 +1,6 @@
 # Consuming-Nasa-apis
 
-Simple Project To That feeds on NASA APIs  to Predict the Next Satellite Position at Given latitude and longitude.
+Simple Project that feeds on NASA APIs to Predict the Next Satellite Position at Given latitude and longitude.
 
 ## Intro 
 
@@ -9,7 +9,7 @@ predictions about the future.Solving global warming is unfortunately outside the
 somewhat simpler:
 
 ``` 
-Use NASA’s public HTTP APIs to  predicts the next time a satellite image will be taken of a  certain location.
+Use NASA’s public HTTP APIs to predicts the next time a satellite image will be taken of a certain location.
 ```
 
 ### Application
@@ -22,7 +22,7 @@ This can be handy when trying to get picture onto online mapping applications li
 * When there is enough data to do so, make a prediction for when the next picture will be taken. 
 * The prediction will have a date and time based on the average time between successive pictures. 
 * Using  https://api.nasa.gov/api.html#assets API to get the information needed to compute this. 
-* NASA documentation mentions that ``` avg_time_delta ```which is usually close to 16 days, 
+* NASA documentation mentions that ``` avg_time_delta ``` which is usually close to 16 days, 
   but let's calculate it since it’s not always the same.
 
 ### Input Function
