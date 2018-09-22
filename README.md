@@ -42,3 +42,13 @@ Here are a few:
 * Grand Canyon 36.098592 -112.097796 
 * Niagara Falls 43.078154 -79.075891 
 * Four Corners Monument 36.998979 -109.045183
+
+### Goal
+
+* Write Production Grade Code.
+* Only Use Basic Dependencies (This helps geeting CoderPad Ready!!.).
+    * json-simple for parsing/encoding JSON.
+    * guava provides immutable collections and other handy utility classes.
+    * Apache Commons Lang for assorted utilities.
+    * JUnit
+    * jMock
