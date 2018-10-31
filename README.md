@@ -1,6 +1,6 @@
 # Consuming-Nasa-apis
 
-Simple Project that feeds on NASA APIs to Predict the Next Satellite Position at Given latitude and longitude.
+Utilise NASA APIs, Satellite Data to Predict the Next Satellite Position at Given `latitude` and `longitude`.
 
 ## Intro 
 
