@@ -1,6 +1,6 @@
 # Consuming-Nasa-apis
 
-Utilise NASA APIs, Satellite Data to Predict the Next Satellite Position at Given `latitude` and `longitude`.
+Consume NASA APIs,Use Satellite Route Data to Predict the Next Satellite Position at Given `latitude` and `longitude`.
 
 ## Intro 
 
@@ -46,7 +46,7 @@ Here are a few:
 ### Goal
 
 * Write Production Grade Code.
-* Only Use Basic Dependencies (This helps getting CoderPad Ready!!.).
+* Only Use Basic Dependencies (This helps getting `CoderPad` Ready!!.).
 
     * json-simple for parsing/encoding JSON.
     * guava provides immutable collections and other handy utility classes.
