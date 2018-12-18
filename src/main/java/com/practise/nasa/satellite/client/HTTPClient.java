@@ -33,6 +33,7 @@ public class HTTPClient implements Client<String, String> {
             }
         } catch (IOException e) {
             disconnect(conn);
+            throw new ClientException(MESSAGES.SOMETHING_WRONG.getVal() + urlString + "\n" + e.getMessage(), e);
         }
         output = readInput(urlString, conn);
         return output;
