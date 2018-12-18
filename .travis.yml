@@ -1,16 +1,15 @@
 dist: trusty
 sudo: required
-
 addons:
   sonarcloud:
-    organization: "akash-mittal-github"
-
+    organization: akash-mittal-github
 jdk:
-  - oraclejdk8
-
+- oraclejdk8
 script:
-  - sonar-scanner
-
+- sonar-scanner
 cache:
   directories:
-    - '$HOME/.sonar/cache'
+  - "$HOME/.sonar/cache"
+env:
+  global:
+    secure: Yji7i0aK5jqdh2HzsLq3zm7C7LtHAMza4z2wA3Bo8wqDBVNa4YTLXe/ouKAASPJxnWYnu64AaXeJeaxaU91lBlerAUBKPc2bRDCAubDuY12ymJCi7YZpeJ39BNQL1PjnO9klaZrKQhnuEofYPldhvXID638l+zG8b2I+rDyu1q8+aL/t8ffmyCRB/iOrU0CtCN/psqIo3RHkYp5ArRoHHNGYy/HXgioxEO+/7Eua3m6IfaTvBb32acAjaKHMQW3C/intVr5SL63ZyyEA7YrulELz9cpWY9heQfdCBUMdf7cmVzb9lN6H1FqPvQjtfN2Ur/WVfDHbcxOiOc8QrnJu2/piKFKIZSOr9AFYLDyeYyrHnVRX6POvPDDZ2YtEf0p1eg+Vy9kKW1EaKnoyXazgPn1DLUkeVo/j+xhqMWol1zKnwX2z8QQoNPJ8lOQvkFcZL2VjGaNfP68k5SbXOPXRI80F4tGFzWs0XvxLmsB0dN3RERaGM1H1sMJ6TVYoGQWBGJ1P9Bxj8VB7IxyWf/HBYdNZ1ZsRbCSlkqB6SIyDk3OIM/Z4sd9JzS8anZE0vrquqUHW0qu4ARvw/bF0oTxk8QJ7sf3VYtkT6LO2AjlTnkbRyfMBqg04bj0IMr2KV0Ar2oR+OjfF1TelIevm7AKGOfxlpMPQ/Y4q8iN7obnhfYw=
