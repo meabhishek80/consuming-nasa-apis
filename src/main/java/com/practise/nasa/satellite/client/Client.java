@@ -27,10 +27,6 @@ public interface Client<K, V> {
                 return val;
             }
 
-            public void setVal(int val) {
-                this.val = val;
-            }
-
             private HTTPCODES(int val) {
                 this.val = val;
             }

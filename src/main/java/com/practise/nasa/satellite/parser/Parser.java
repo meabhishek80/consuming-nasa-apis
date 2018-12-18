@@ -14,7 +14,6 @@ import com.practise.nasa.satellite.validator.Validators;
 public interface Parser<K, V> {
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss");
     Calendar calendar = new GregorianCalendar();
-    Date currentDate = new Date();
 
     interface JSONParams {
         String COUNT = "count";
@@ -46,7 +45,7 @@ public interface Parser<K, V> {
     }
 
     static Date addDays(Long days) {
-        calendar.setTime(currentDate);
+        calendar.setTime(new Date());
         calendar.add(Calendar.DATE, days.intValue());
         return calendar.getTime();
     }

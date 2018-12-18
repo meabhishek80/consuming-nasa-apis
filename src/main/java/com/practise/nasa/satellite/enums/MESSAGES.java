@@ -13,10 +13,6 @@ public enum MESSAGES {
         return val;
     }
 
-    public void setVal(String val) {
-        this.val = val;
-    }
-
     private String val;
 
     private MESSAGES(String val) {
