@@ -16,7 +16,7 @@ public class HTTPClient implements Client<String, String> {
     Logger log = Logger.getLogger(HTTPClient.class.getName());
 
     @Override
-    public String get(String urlString) throws ClientException {
+    public String get(String urlString) {
         String output = null;
         HttpURLConnection conn = null;
 
@@ -25,10 +25,10 @@ public class HTTPClient implements Client<String, String> {
             url = new URL(urlString);
             System.out.println("Calling " + urlString);
             conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod(Client.Params.GET);
-            conn.setRequestProperty(Client.Params.HEADER_ACCEPT, Client.Params.APP_JSON);
-            conn.setReadTimeout(Client.Params.READ_TIME_OUT);
-            if (conn.getResponseCode() != Client.Params.HTTPCODES.TWO_HUNDERED.getVal()) {
+            conn.setRequestMethod(Params.GET);
+            conn.setRequestProperty(Params.HEADER_ACCEPT, Params.APP_JSON);
+            conn.setReadTimeout(Params.READ_TIME_OUT);
+            if (conn.getResponseCode() != Params.HTTPCODES.TWO_HUNDERED.getVal()) {
                 throw new ClientException("Failed : HTTP error code : " + conn.getResponseCode());
             }
         } catch (IOException e) {

@@ -8,25 +8,25 @@ import com.practise.nasa.satellite.exception.ValidationException;
 
 public interface Validators {
 
-    static void validatLatLong(Double lat, Double lon) throws ValidationException {
+    static void validatLatLong(Double lat, Double lon) {
         validatLat(lat);
         validatLong(lon);
     }
 
-    static void validatLat(Double lat) throws ValidationException {
+    static void validatLat(Double lat) {
         if (lat < Double.valueOf(-90) || lat > Double.valueOf(90) || Objects.isNull(lat)) {
             throw new ValidationException(MESSAGES.INVALID_ARGUMENTS.name() + "Latitude in degrees is -90 and +90 f");
         }
     }
 
-    static void validatLong(Double lat) throws ValidationException {
+    static void validatLong(Double lat) {
         if (lat < Double.valueOf(-180) || lat > Double.valueOf(180) || Objects.isNull(lat)) {
             throw new ValidationException(
                     MESSAGES.INVALID_ARGUMENTS.name() + "Longitude is in the range -180 and +180");
         }
     }
 
-    static void validateClientResponse(String val) throws ValidationException {
+    static void validateClientResponse(String val) {
         validateString(val);
         if (val.contains("error")) {
             throw new ValidationException(MESSAGES.INVALID_ARGUMENTS.name() + val);
@@ -34,13 +34,13 @@ public interface Validators {
 
     }
 
-    static void validateString(String val) throws ValidationException {
+    static void validateString(String val) {
         if (!(val != null && !val.isEmpty())) {
             throw new ValidationException(MESSAGES.INVALID_ARGUMENTS.name() + val);
         }
     }
 
-    static void validate(Stats val) throws ValidationException {
+    static void validate(Stats val) {
         if (Objects.isNull(val)) {
             throw new ValidationException(MESSAGES.INVALID_ARGUMENTS.name());
         } else if (Objects.isNull(val.getResults())) {
@@ -51,7 +51,7 @@ public interface Validators {
         }
     }
 
-    static void validateObjects(Objects val) throws ValidationException {
+    static void validateObjects(Objects val) {
         if (val == null) {
             throw new ValidationException(MESSAGES.INVALID_ARGUMENTS.name());
         }
