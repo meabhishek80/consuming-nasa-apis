@@ -11,7 +11,7 @@ public interface Client<K, V> {
         String QUERY_PARAM_SKEY = "api_key=9Jz6tLIeJ0yY9vjbEUWaH9fsXA930J9hspPchute";
         String QUERY_PARAM_LONGITUTDE = "lon=";
         String QUERY_PARAM_LATTITUDE = "lat=";
-        String QUERY_PARAM_SEPERATOR_QUESTION_MARK = "&";
+        String QUERY_PARAM_SEPERATOR_AMPERSAND = "&";
 
         String GET = "GET";
 
@@ -42,8 +42,8 @@ public interface Client<K, V> {
     static String buildURL(Double latitude, Double longitude) {
         StringBuilder builder = new StringBuilder();
         builder.append(Params.URL).append(Params.QUERY_PARAM_LONGITUTDE).append(String.valueOf(longitude))
-                .append(Params.QUERY_PARAM_SEPERATOR_QUESTION_MARK).append(Params.QUERY_PARAM_LATTITUDE)
-                .append(String.valueOf(latitude)).append(Params.QUERY_PARAM_SEPERATOR_QUESTION_MARK)
+                .append(Params.QUERY_PARAM_SEPERATOR_AMPERSAND).append(Params.QUERY_PARAM_LATTITUDE)
+                .append(String.valueOf(latitude)).append(Params.QUERY_PARAM_SEPERATOR_AMPERSAND)
                 .append(Params.QUERY_PARAM_SKEY);
         return builder.toString();
     }
