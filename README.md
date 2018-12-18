@@ -1,4 +1,13 @@
+
 # Consuming-Nasa-apis
+
+[![GitHub issues](https://img.shields.io/github/issues/Akash-Mittal/consuming-nasa-apis.svg)](https://github.com/Akash-Mittal/consuming-nasa-apis/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Akash-Mittal/consuming-nasa-apis.svg)](https://github.com/Akash-Mittal/consuming-nasa-apis/network)
+[![GitHub license](https://img.shields.io/github/license/Akash-Mittal/consuming-nasa-apis.svg)](https://github.com/Akash-Mittal/consuming-nasa-apis/blob/master/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Akash-Mittal/consuming-nasa-apis.svg)](https://github.com/Akash-Mittal/consuming-nasa-apis/stargazers)
+[![Sonarcloud Status](https://sonarcloud.io/api/project_badges/measure?project=Akash-Mittal_consuming-nasa-apis&metric=alert_status)](https://sonarcloud.io/dashboard?id=Akash-Mittal_consuming-nasa-apis)
+[![Build Status](https://travis-ci.org/Akash-Mittal/consuming-nasa-apis.svg?branch=master)](https://travis-ci.org/Akash-Mittal/consuming-nasa-apis)
+
 
 Consume NASA APIs,Use Satellite Route Data to Predict the Next Satellite Position at Given `latitude` and `longitude`.
 
