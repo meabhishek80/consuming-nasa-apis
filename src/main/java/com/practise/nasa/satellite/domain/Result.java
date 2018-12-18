@@ -9,7 +9,7 @@ public class Result implements Serializable {
 
     private Date date;
     private String id;
-    private final static long serialVersionUID = -3535993830592851852L;
+    private static final long serialVersionUID = -3535993830592851852L;
 
     public Date getDate() {
         return date;

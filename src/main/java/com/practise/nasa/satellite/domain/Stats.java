@@ -9,7 +9,7 @@ public class Stats implements Serializable {
 
     private Long count;
     private List<Result> results = null;
-    private final static long serialVersionUID = 460539461792981326L;
+    private static final long serialVersionUID = 460539461792981326L;
 
     public Long getCount() {
         return count;
