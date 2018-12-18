@@ -1,4 +1,4 @@
-package com.practise.nasa.satellite.prediction;
+package com.practise.nasa.satellite.client.main;
 
 import java.util.List;
 
@@ -11,6 +11,7 @@ import com.practise.nasa.satellite.exception.BusinessException;
 import com.practise.nasa.satellite.exception.ServiceException;
 import com.practise.nasa.satellite.parser.Parser;
 import com.practise.nasa.satellite.parser.StatsDataParser;
+import com.practise.nasa.satellite.prediction.PredictionTemplate;
 import com.practise.nasa.satellite.prediction.enums.PREDICTIONSTRATEGY;
 
 public class Solution extends PredictionTemplate {

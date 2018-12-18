@@ -45,9 +45,9 @@ public interface Parser<K, V> {
         return ((date2.getTime() - date1.getTime()) / 1000 / 60 / 60 / 24);
     }
 
-    static Date addDays(long days) {
+    static Date addDays(Long days) {
         calendar.setTime(currentDate);
-        calendar.add(Calendar.DATE, Long.valueOf(days).intValue());
+        calendar.add(Calendar.DATE, days.intValue());
         return calendar.getTime();
     }
 }
