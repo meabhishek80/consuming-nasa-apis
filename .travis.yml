@@ -5,8 +5,7 @@ addons:
     organization: akash-mittal-github
 jdk:
 - oraclejdk8
-script:
-- sonar-scanner
+script: mvn clean install sonar:sonar 
 cache:
   directories:
   - "$HOME/.sonar/cache"
